@@ -1,0 +1,17 @@
+The objective of this project is to develop a comprehensive four wheel steering system package. The prototype is aimed at developing a package which can switch between various modes of four wheel steer, crab steer and zero turn steer, for a typical application of wheelchair. 
+
+While four wheel steering system has been deployed for over 20 years in the automobile industry, its application by combination with zero-turn steer has been few. This provides an opportunity to venture into this space to explore the opportunities to implement such a system for a wheel chair. 
+
+This project has gone through stages of development of a prototype that portrays the idea of an advanced steering system, specially tailored for low speed applications. The build of the vehicle lasted a period of six months, including testing and result analysis. The project is a culmination of mechanical, electrical, electronic and hydraulic principles which when brought together provides a prototype fully capable of demonstrating various steering manoeuvres such as counter-phase steering, conventional steering and zero turn steering mechanism. 
+
+This system is controlled by two Arduino Unos mounted on the vehicle and three motor drivers. The motor drivers are used to drive the DC motors (for vehicle propulsion), for stepper motor (for turning the front wheel rack) and for the secondary DC motor (to attain zero turn steer) [1].  
+
+These motors further work in tandem with the servo motors that is used to turn the rear wheel via a four bar mechanism. The Arduino unos are coded using the Arduino IDE Software. To check the values with the literature, a comprehensive MATLAB code was developed that can output the values with regards to the dimensions of the vehicle.  
+
+The measured values were plotted and a trend line was obtained. A third degree polynomial with a good fit is used to represent the proposed steering mechanism. This polynomial helps interpolate the values in between which further helps understand the reduction in turning circle radius throughout the range. It is seen that the Coefficient of Determination (R2) is close to one which depicts the closeness of fit of the trend line to the plotted values. 
+
+The values were tabulated and the reduction in TCR between two wheel steering and four wheel steering were obtained and tabulated as well. A minimum reduction percentage of TCR as 49.1% and a maximum reduction percentage of 63.83% against an aim of 20% set as target during the initial stages. 
+
+This indicates that the proposed build has been successful in integrating 2WS (conventional steering system), 4WS (counter phase steering) and zero turn steering systems in a comprehensive electro-mechanical system combined with hydraulic systems as one robust package.  
+
+Additionally, a model of an electric wheel chair was developed. This electric model portrays an example of the implementation of the idea and can be developed based on the prototype developed for this project. While substantial changes have to be made, the gist of the technology remains the same and can find its used in a wide variety of industries. Further stress analysis was performed on the wheelchair using ANSYS 16.2 workbench. This simulation provided a factor of safety of above 2, thereby proving safe for regular usage. 
